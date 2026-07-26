@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@config": [
+        "src/config/index.ts"
+      ],
+      "@config/*": [
+        "src/config/*"
+      ],
+      "@pages": [
+        "src/pages/index.ts"
+      ],
+      "@pages/*": [
+        "src/pages/*"
+      ],
+      "@steps": [
+        "src/steps/index.ts"
+      ],
+      "@steps/*": [
+        "src/steps/*"
+      ],
+      "@playwright/extension": [
+        "src/extensions/index.ts"
+      ],
+      "@playwright/extension/*": [
+        "src/extensions/*"
+      ],
+      "@util": [
+        "src/util/index.ts"
+      ],
+      "@util/*": [
+        "src/util/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "playwright.config.ts"
+  ]
+}

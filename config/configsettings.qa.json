@@ -1,0 +1,13 @@
+{
+  "Environment": "QA",
+  "Portals": {
+    "CheapFlights_Web": "https://www.cheapflights.com.au",
+    "RestfulBooker_Api": "https://restful-booker.herokuapp.com"
+  },
+  "ApiAuth": {
+    "RestfulBooker": {
+      "Username": "admin",
+      "Password": "password123"
+    }
+  }
+}

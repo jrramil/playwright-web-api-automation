@@ -1,0 +1,65 @@
+# ===============================
+# Root EditorConfig
+# ===============================
+root = true
+
+# -------------------------------
+# Global defaults
+# -------------------------------
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# -------------------------------
+# TypeScript / JavaScript
+# -------------------------------
+[*.{ts,tsx,js,jsx}]
+indent_size = 2
+max_line_length = 120
+quote_type = single
+semicolon = true
+
+# -------------------------------
+# JSON / JSONC (config files)
+# -------------------------------
+[*.{json,jsonc}]
+indent_size = 2
+
+# -------------------------------
+# YAML (pipelines, workflows)
+# -------------------------------
+[*.{yml,yaml}]
+indent_size = 2
+
+# -------------------------------
+# Markdown
+# -------------------------------
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = off
+
+# -------------------------------
+# Playwright artifacts
+# -------------------------------
+[test-results/**]
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+# -------------------------------
+# Shell / batch scripts
+# -------------------------------
+[*.{sh,ps1,bat}]
+indent_size = 2
+end_of_line = lf
+
+# -------------------------------
+# Ignore minified files
+# -------------------------------
+[*.min.*]
+indent_size = unset
+trim_trailing_whitespace = false
+insert_final_newline = false
