@@ -1,4 +1,4 @@
-# Web & API Test Automation — Technical Exam
+# Web & API Test Automation
 
 Playwright + TypeScript suites for the two case studies:
 
